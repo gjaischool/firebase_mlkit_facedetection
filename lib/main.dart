@@ -49,8 +49,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  FirebaseDatabase.instance.databaseURL =
-      'https://mlkitfacedetection-41f1d-default-rtdb.asia-southeast1.firebasedatabase.app';
+  FirebaseDatabase.instance.databaseURL = '';
 
   /// 포그라운드 서비스를 위한 통신 포트 초기화
   ///

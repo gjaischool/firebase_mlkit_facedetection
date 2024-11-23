@@ -1,6 +1,6 @@
 # firebase_mlkit_facedetection
 
-A new Flutter project.
+flutter_mlkit_facedetection + firebase
 
 ## Getting Started
 
