@@ -11,9 +11,9 @@ import 'package:flutter/services.dart';
 import 'package:permission_handler/permission_handler.dart'; // 플랫폼 서비스 관련 기능
 import 'package:haptic_feedback/haptic_feedback.dart';
 import 'package:volume_controller/volume_controller.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
-import 'package:device_info_plus/device_info_plus.dart';
 
 // flutterfire configure --project=mlkitfacedetection-41f1d
 
@@ -49,7 +49,8 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  FirebaseDatabase.instance.databaseURL = '';
+  FirebaseDatabase.instance.databaseURL =
+      'https://mlkitfacedetection-41f1d-default-rtdb.asia-southeast1.firebasedatabase.app/';
 
   /// 포그라운드 서비스를 위한 통신 포트 초기화
   ///
